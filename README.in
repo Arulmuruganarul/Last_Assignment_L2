@@ -1,0 +1,38 @@
+1. Initialize:
+   - Load necessary libraries (FontAwesome, Splide).
+   - Define global variables (e.g., searchResultsSection, searchText, userInputEl, carouselList1).
+   - Create a Splide instance for the first carousel (splide1).
+
+2. Event Listeners:
+   - Attach an event listener to the search input box (userInputEl) to trigger a function (getUserMovie) on user input change.
+
+3. Fetch Data Function (fetchData):
+   - Define a function fetchData to handle data fetching.
+   - Add an event listener to the search input box to trigger getUserMovie function on user input change.
+
+4. Render Search Movie Function (renderSearchMovie):
+   - Define a function renderSearchMovie to display details of a searched movie.
+   - Fetch additional movie details and recommendations based on genre.
+   - Update the content in searchResultsSection with movie details and call renderCarousel function.
+
+5. Render Carousel Function (renderCarousel):
+   - Define a function renderCarousel to display a carousel of recommended movies.
+   - Loop through the list of recommended movies and dynamically create carousel slides.
+   - Update carouselList1 with the generated slides.
+
+6. User Input Function (getUserMovie):
+   - Define a function getUserMovie to handle user input.
+   - Fetch movie data from the API based on the user's input.
+   - Call renderSearchMovie to display the details of the first movie in the search results.
+
+7. Initial Setup:
+   - Call the fetchData function to set up initial data fetching and event handling.
+   - Initialize the first Splide carousel (splide1).
+
+8. Responsive Design:
+   - Implement media queries to adjust styles for different screen sizes.
+
+9. Additional Notes:
+   - Ensure proper error handling for API requests.
+   - Consider using try-catch blocks for asynchronous operations.
+   - Update the pseudo code as needed based on your specific implementation details.
